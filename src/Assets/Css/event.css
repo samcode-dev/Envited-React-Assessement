@@ -1,0 +1,108 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.cont .img-cont {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  max-width: 500px;
+}
+.cont .details-cont {
+  margin-left: 2.5em;
+  margin-top: 1em;
+}
+.cont .details-cont .det1 h1 {
+  color: #240D57;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.cont .details-cont .det1 h3 {
+  font-size: 0.875rem;
+  color: #828282;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.cont .details-cont .det1 h3 span {
+  font-weight: 700;
+}
+.cont .details-cont .det2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.cont .details-cont .det2 .evt-det {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.7em;
+  margin-right: 4em;
+}
+.cont .details-cont .det2 .evt-det h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #240D57;
+  margin-bottom: 5px;
+}
+.cont .details-cont .det2 .evt-det h4 {
+  font-size: 0.875rem;
+  color: #4F4F4F;
+  font-weight: 400;
+}
+.cont .details-cont .det2 .evt-det h4 span {
+  font-weight: 700;
+}
+.cont .details-cont .det2 .arr {
+  position: absolute;
+  right: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .cont {
+    margin: 0 4em;
+  }
+  .cont .details-cont .det1 {
+    margin: 0 6em;
+  }
+}
+@media screen and (min-width: 500px) {
+  .cont {
+    margin-top: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cont {
+    height: 100vh;
+    flex-direction: row;
+  }
+  .cont .img-cont {
+    order: 1;
+    max-width: 600px;
+    height: 500px;
+  }
+  .cont .details-cont .det1 h1 {
+    font-size: 3rem;
+  }
+  .cont .details-cont .det1 h3 {
+    font-size: 1.125rem;
+  }
+  .cont .details-cont .det2 {
+    margin-top: 30px;
+  }
+  .cont .details-cont .det2 .main-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .cont .details-cont .det2 .evt-det h3 {
+    font-size: 1.125rem;
+  }
+  .cont .details-cont .det2 .evt-det h4 {
+    font-size: 1.125rem;
+  }
+}/*# sourceMappingURL=event.css.map */

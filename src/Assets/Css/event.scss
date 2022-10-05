@@ -1,0 +1,155 @@
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    .img-cont {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        max-width: 500px;
+    }
+
+
+    .details-cont {
+        margin-left: 2.5em;
+        margin-top: 1em;
+
+        .det1 {
+            h1 {
+                color: #240D57;
+                font-size: 1.75rem;
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: 0.875rem;
+                color: #828282;
+                font-weight: 400;
+                margin-top: 8px;
+
+                span {
+                    font-weight: 700;
+
+                }
+            }
+        }
+
+        .det2 {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            .evt-det {
+                // align-self: flex-start;
+                display: flex;
+                flex-direction: column;
+                margin-left: .7em;
+                margin-right: 4em;
+                h3 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #240D57;
+                    margin-bottom: 5px;
+                }
+
+                h4 {
+                    font-size: 0.875rem;
+                    color: #4F4F4F;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 700;
+                    
+                    }
+                }
+            }
+
+            .arr {
+                position: absolute;
+                right: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .cont {
+        margin: 0 4em;
+
+        .details-cont {
+            .det1 {
+                margin: 0 6em;
+            }
+        }
+    }
+    
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .cont {
+        margin-top: 3em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .cont {
+        height: 100vh;
+        flex-direction: row;
+        // margin: 0 auto;
+
+        .img-cont {
+            order: 1;
+            max-width: 600px;
+            height: 500px;
+        }
+
+        .details-cont {
+            .det1 {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h3 {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .det2 {
+                margin-top: 30px;
+                .main-icon {
+                    width: 56px;
+                    height: 56px;
+                }
+
+
+                .evt-det {
+                    h3 {
+                        font-size: 1.125rem;
+                    }
+
+                    h4 {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

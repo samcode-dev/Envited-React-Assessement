@@ -19,11 +19,14 @@
   -webkit-text-fill-color: transparent;
 }
 .home-container .home-top h3 {
-  max-width: 35rem;
+  max-width: 33rem;
   font-size: 1rem;
   color: #4F4F4F;
   font-weight: 300;
   margin-top: 0.7em;
+}
+.home-container .home-top .home-top-btn {
+  display: none;
 }
 .home-container img {
   width: 70%;
@@ -33,12 +36,18 @@
 .home-container .home-btn {
   background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
   border-radius: 10px;
-  font-size: 0.7rem;
-  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60%;
+  height: 3rem;
   max-width: 20rem;
-  padding: 1em 0.1em;
   margin-top: 1em;
+  margin-bottom: 1rem;
+}
+.home-container .home-btn h1 {
+  font-size: 20px;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
@@ -55,22 +64,32 @@
 }
 @media (min-width: 1200px) {
   .home-container {
+    height: 100vh;
     flex-direction: row;
     justify-content: space-around;
+    text-align: end;
   }
   .home-container .home-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     order: 1;
   }
   .home-container .home-top .home-top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
     border-radius: 10px;
-    font-size: 0.7rem;
+    width: 320px;
+    height: 55px;
+    margin-top: 3em;
+  }
+  .home-container .home-top .home-top-btn h1 {
+    font-size: 20px;
     font-weight: 700;
-    width: 60%;
-    max-width: 20rem;
-    padding: 1em 0.1em;
-    margin-top: 1em;
     color: #FFFFFF;
+    max-width: none;
   }
   .home-container .home-btn {
     display: none;

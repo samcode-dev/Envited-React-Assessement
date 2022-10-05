@@ -1,0 +1,134 @@
+.create-cont {
+  margin: 0 10%;
+  margin-top: 3em;
+}
+.create-cont h4 {
+  text-align: left;
+  color: #828282;
+}
+.create-cont .main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.create-cont .main-cont h1 {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  color: #240D57;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.create-cont .main-cont .upload {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  max-height: 60vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+.create-cont .main-cont .upload input[type=file] {
+  display: none;
+}
+.create-cont .main-cont .upload .custom-file-upload {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.create-cont .main-cont .forms {
+  width: 100%;
+}
+.create-cont .main-cont .forms .second-text {
+  display: none;
+}
+.create-cont .main-cont .forms button {
+  border: none;
+}
+.create-cont .main-cont .text-input-cont {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.create-cont .main-cont .text-input-cont label {
+  text-align: left;
+  margin-bottom: 0.5em;
+  color: #4f4f4f;
+  font-weight: 600;
+  font-size: 20px;
+}
+.create-cont .main-cont .text-input-cont label span {
+  color: #828282;
+  font-weight: 300;
+}
+.create-cont .main-cont .text-input-cont input {
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #E0E0E0;
+  opacity: 0.5;
+  padding: 1rem;
+}
+.create-cont .main-cont .text-input-cont input:hover {
+  background-color: #E6DEFC;
+}
+.create-cont .main-cont .text-input-cont input:focus {
+  border: none;
+  outline: none;
+}
+.create-cont .main-cont .home-btn {
+  background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2em;
+  margin-bottom: 2rem;
+}
+.create-cont .main-cont .home-btn h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 520px) {
+  .create-cont .main-cont h1 {
+    font-size: 2rem;
+  }
+  .create-cont .main-cont .text-input-cont label {
+    font-size: 15px;
+  }
+  .create-cont .main-cont .home-btn h1 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .create-cont .main-cont {
+    flex-direction: row;
+    gap: 6%;
+  }
+  .create-cont .main-cont .first {
+    order: 1;
+  }
+  .create-cont .main-cont .first .first-text {
+    display: none;
+  }
+  .create-cont .main-cont .upload {
+    width: 1000px;
+  }
+  .create-cont .main-cont .forms {
+    max-width: 700px;
+  }
+  .create-cont .main-cont .forms .second-text {
+    display: block;
+  }
+}/*# sourceMappingURL=create.css.map */
